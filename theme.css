@@ -1,12 +1,16 @@
 *{
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #222;
 }
 html, body{
     margin: 0;
     height: 100vh;
     text-align: center;
+    background-image: url(./img/fondo.jpg);
+    background-position: 40% 30%;
+    background-attachment: scroll;
+    background-size: cover;
 }
 .header{
     background-image: url(./img/hero.jpeg);
@@ -18,6 +22,9 @@ html, body{
     margin: 0;
     padding-top: 60vh;
 }
+
+
+
 .heading {
     color: #ffffff;
     display: block;
@@ -61,6 +68,7 @@ html, body{
     margin: 0 auto;
     max-width: 600px;
     padding: 1em 2.4em;
+    font-size: 16px;
 }
 .sub-heading{
     font-family: 'Caveat', cursive;
@@ -114,13 +122,13 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15;
     background-color: #fff; /* Fondo blanco para un look fresco y limpio */
     border: 2px solid #ddd; /* Borde sutil */
     border-radius: 15px;
     font-family: 'Quicksand', sans-serif;
     color: #333;
     padding: 10px 20px;
+    margin: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
   }
   

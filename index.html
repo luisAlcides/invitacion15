@@ -9,21 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <audio autoplay loop>
+      <source src="./cancion.mp3" type="audio/mp3">
+    </audio>
     <header class="header">
       <h1 class="heading">
         Mis 15 años
-        <span class="heading-subtext"> Rosseling</span>
+        <span class="heading-subtext">Rosseling Gabriela Quezada Quintanilla</span>
       </h1>
     </header>
     <a data-scroll class="fixed-button" href="#confirmar" id="rsvpButton">Confirmar</a> 
     <section class="section">
-      <h2 class="sub-heading">Overview</h2>
-      <p>Con gran alegría en nuestros corazones y el deseo de compartir momentos que serán inolvidables, les extendemos nuestra más cordial invitación para acompañarnos en la celebración de los quince años de nuestra querida [Nombre de la Quinceañera].
-
-        Este es un momento muy especial en su vida, y sería un honor para nosotros contar con su presencia en esta ocasión tan significativa.
-      </p>
+      <p>Con gran ilusión y alegría, me preparo para celebrar un momento muy especial en mi vida mis 15 años. Esta ocasión marca el inicio de una nueva etapa, y sería un honor contar con tu presencia para hacer este día aún más memorable.
+       </p> 
+        <p>Te invito cordialmente a unirte a la celebración de mis 15 años, un día lleno de magia, alegría y agradecimiento por las bendiciones recibidas. Vamos a compartir momentos inolvidables, bailar, reír, y sobre todo, agradecer por el camino recorrido y por los sueños que están por venir.</p>
+        <p>
+          Tu presencia sería el regalo más especial para mí en este día tan importante. Por favor, confirma tu asistencia.
+        </p>
     </section>
-    <section class="section">
       <h2 class="sub-heading">Detalles</h2>
       <div class="details">
         <i class="fas fa-calendar-check"></i>
@@ -48,17 +51,23 @@
         <h3 class="details-heading">Ceremonia Religiosa</h3>
         <button class="btn-moderno" onclick="verUbicacionParroquia()">Parroquia Espíritu Santo</button>
       </div>
+      <div class="details">
+        <i class="fas fa-gift"></i>
+        <h3 class="details-heading">Sugerencia de Regalo</h3>
+        <p>¡Su presencia es lo más importante!</p>
+        <p>Si aún así desea hacernos un obsequio, agradecemos sea en efectivo</p>
+      </div>
       <!-- Agregar esto dentro de tu sección de Lodging para el botón de ubicación -->
       <div class="details">
         <i class="fas fa-map-marker-alt"></i>
         <h3 class="details-heading">Ver Ubicación de Hospedaje Casa Blanca</h3>
-        <button class="btn-moderno" onclick="verUbicacionHospedajeCasaBlanca()">Ver Ubicaciones</button>
+        <button class="btn-moderno" onclick="verUbicacionHospedajeCasaBlanca()">Ver Ubicación</button>
       </div>
 
       <div class="details">
         <i class="fas fa-map-marker-alt"></i>
         <h3 class="details-heading">Ver Ubicación de Hospedaje Las Palmas</h3>
-        <button class="btn-moderno" onclick="verUbicacionHospedajeLasPalmas()">Ver Ubicaciones</button>
+        <button class="btn-moderno" onclick="verUbicacionHospedajeLasPalmas()">Ver Ubicación</button>
       </div>
 
       <!-- Agregar esto al final de tu body para el botón de WhatsApp -->
@@ -67,19 +76,21 @@
         <h3 class="details-heading">Confirmar Asistencia</h3>
         <button id='confirmar' class="btn-moderno" onclick="confirmarAsistencia()">Confirmar por WhatsApp</button>
       </div>
-
-      <div class="carousel">
-        <div class="carousel-images">
-          <img src="./img/imagen1.jpg" alt="Imagen 1">
-          <img src="./img/imagen2.jpg" alt="Imagen 2">
-          <img src="./img/imagen3.jpg" alt="Imagen 2">
-          <img src="./img/imagen4.jpg" alt="Imagen 2">
-          <img src="./img/imagen5.jpg" alt="Imagen 2">
-          <img src="./img/imagen6.jpg" alt="Imagen 2">
-          <img src="./img/imagen7.jpg" alt="Imagen 2">
-          <!-- Añade más imágenes según sea necesario -->
+      <h3 class="sub-heading">Galeria de imagenes</h3>
+      </section>
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="./img/imagen1.jpg" alt="Imagen 1">
+            <img src="./img/imagen2.jpg" alt="Imagen 2">
+            <img src="./img/imagen3.jpg" alt="Imagen 2">
+            <img src="./img/imagen4.jpg" alt="Imagen 2">
+            <img src="./img/imagen5.jpg" alt="Imagen 2">
+            <img src="./img/imagen6.jpg" alt="Imagen 2">
+            <img src="./img/imagen7.jpg" alt="Imagen 2">
+            <!-- Añade más imágenes según sea necesario -->
+          </div>
         </div>
-      </div>
+        
       
     
     <script src="./js/smooth-scroll.polyfills.min.js"></script>
