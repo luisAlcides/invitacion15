@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mis 15 años</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"> 
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">
+        Mis 15 años
+        <span class="heading-subtext"> Rosseling</span>
+      </h1>
+    </header>
+    <a data-scroll class="fixed-button" href="#confirmar" id="rsvpButton">Confirmar</a> 
+    <section class="section">
+      <h2 class="sub-heading">Overview</h2>
+      <p>Con gran alegría en nuestros corazones y el deseo de compartir momentos que serán inolvidables, les extendemos nuestra más cordial invitación para acompañarnos en la celebración de los quince años de nuestra querida [Nombre de la Quinceañera].
+
+        Este es un momento muy especial en su vida, y sería un honor para nosotros contar con su presencia en esta ocasión tan significativa.
+      </p>
+    </section>
+    <section class="section">
+      <h2 class="sub-heading">Detalles</h2>
+      <div class="details">
+        <i class="fas fa-calendar-check"></i>
+        <h3 class="details-heading">Cuando</h3>
+        <p>Sábado 27 de abril</p>
+        <div id="contador">
+          <div class="tiempo" id="dias"></div>
+          <div class="puntos">:</div>
+          <div class="tiempo" id="horas"></div>
+          <div class="puntos">:</div>
+          <div class="tiempo" id="minutos"></div>
+          <div class="puntos">:</div>
+          <div class="tiempo" id="segundos"></div>
+      </div>
+      <div class="details">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 class="details-heading">Recepción</h3>
+        <button class="btn-moderno" onclick="verUbicacionRecepcion()">Finca donde Peréz</button>
+      </div>
+      <div class="details">
+        <i class="fas fa-church"></i>
+        <h3 class="details-heading">Ceremonia Religiosa</h3>
+        <button class="btn-moderno" onclick="verUbicacionParroquia()">Parroquia Espíritu Santo</button>
+      </div>
+      <!-- Agregar esto dentro de tu sección de Lodging para el botón de ubicación -->
+      <div class="details">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3 class="details-heading">Ver Ubicación de Hospedaje Casa Blanca</h3>
+        <button class="btn-moderno" onclick="verUbicacionHospedajeCasaBlanca()">Ver Ubicaciones</button>
+      </div>
+
+      <div class="details">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3 class="details-heading">Ver Ubicación de Hospedaje Las Palmas</h3>
+        <button class="btn-moderno" onclick="verUbicacionHospedajeLasPalmas()">Ver Ubicaciones</button>
+      </div>
+
+      <!-- Agregar esto al final de tu body para el botón de WhatsApp -->
+      <div class="details">
+        <i class="fab fa-whatsapp fa-3x"></i>
+        <h3 class="details-heading">Confirmar Asistencia</h3>
+        <button id='confirmar' class="btn-moderno" onclick="confirmarAsistencia()">Confirmar por WhatsApp</button>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="./img/imagen1.jpg" alt="Imagen 1">
+          <img src="./img/imagen2.jpg" alt="Imagen 2">
+          <img src="./img/imagen3.jpg" alt="Imagen 2">
+          <img src="./img/imagen4.jpg" alt="Imagen 2">
+          <img src="./img/imagen5.jpg" alt="Imagen 2">
+          <img src="./img/imagen6.jpg" alt="Imagen 2">
+          <img src="./img/imagen7.jpg" alt="Imagen 2">
+          <!-- Añade más imágenes según sea necesario -->
+        </div>
+      </div>
+      
+    
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var rsvpButton = document.getElementById('rsvpButton')
+      rsvpButton.addEventListener('click',hideButton,false);
+
+      function hideButton() {
+        rsvpButton.style.display = 'none';
+      }   
+    </script>
+  </body>
+</html>
